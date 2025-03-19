@@ -35,6 +35,9 @@ from spiderfoot import SpiderFootCorrelator
 from spiderfoot.logger import logListenerSetup, logWorkerSetup
 from spiderfoot import __version__
 
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "ścieżka_do_folderu_z_modułem_spiderfoot")))
+
 scanId = None
 dbh = None
 
